@@ -1,0 +1,127 @@
+a{
+text-decoration: none;
+}
+
+
+.chat {
+  height: 100vh;
+  width: calc(100% - 300px);
+  float: right;
+  position: relative;
+  .header {
+    width: calc(100vw - 340px);
+    height: 70px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 30px 0px 0px 40px;
+    position: fixed;
+    overflow: scroll;
+    .left-header {
+      &__button {
+      color: #38AEF0;
+      font-size: 15px;
+      padding: 7.5px 20px;
+      margin: 0 40px 0 0;
+      border: 1px solid #38AEF0;
+      float: right;
+      }
+      &__title {
+        color: #333;
+        font-size: 20px;
+      }
+      &__members {
+      font-size: 12px;
+      color: #999999;
+      margin: 0 300px 0 0;
+      }
+    }
+    .right-header {
+      border: 1px solid $light_blue;
+      color: $light_blue;
+      float: right;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 28px;
+      padding: 0 20px;
+      &__button {
+      color: #38AEF0;
+      font-size: 15px;
+      padding: 7.5px 20px;
+      margin: 0 40px 0 0;
+      border: 1px solid #38AEF0;
+      float: right;
+      }
+    }
+  }
+
+  .messages{
+    margin:40px 0 0 0;
+    padding: 30px 0px 0px 40px;
+    overflow: scroll;
+    height: 693px;
+    top: 60px;
+    position: absolute;
+    .message{
+      &__user-name{
+        font-size: 16px;
+        color: #434A54;
+        display: inline-block;
+      }
+      &__date{
+        font-size: 12px;
+        color: #434A54;
+        display: inline-block;
+        margin:0 0 0 10px;
+      }
+      &__body{
+        font-size: 14px;
+        color: #999999;
+        margin:10px 0 40px 0;
+      }
+    }
+  }
+
+  .footer {
+    width: calc(100vw - 340px);
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 43px;
+    height: 50px;
+    .form{
+      padding: 20px 20px;
+      width: 100%;
+      background-color: #AAAAAA;
+      padding: relative;
+      &__message {
+      width: calc(100% - 160px);
+      height: 50px;
+      color: #434A54;
+      font-size: 16px;
+      padding: 0 0 0 10px;
+      position: relative;
+      }
+      &__mask {
+        float: left;
+        height: 50px;
+        padding-right: 10px;
+        &__image {
+        position: absolute;
+        top: 35px;
+        right: 140px;
+        }
+        .hidden {
+          display: none;
+        }
+      }
+      &__submit {
+        background-color: $light_blue;
+        border: none;
+        color: $white;
+        float: right;
+        font-size: 16px;
+        height: 50px;
+        margin: 0 20px;
+        padding: 0 20px;
+      }
+    }
+  }
+}
